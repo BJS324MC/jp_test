@@ -15,7 +15,7 @@ question = "",
 answer = "";
 
 function begin(){
-    mainBtn.innerText = "Guess"
+    mainBtn.innerText = "Enter"
     newQuestion()
     textInput.style.display = "block"
 }
@@ -32,7 +32,7 @@ function newQuestion(){
     displayText.innerText = "Q" + testCount
     jpText.innerText = question
 }
-function guess(){
+function enter(){
     if(textInput.value == answer){
         newQuestion()
     }
@@ -61,7 +61,7 @@ function main(){
             btnState = 1
             break
         case 1:
-            guess()
+            enter()
             break
         case 2:
             exit()
