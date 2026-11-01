@@ -44,8 +44,8 @@ function enter(){
 function end(){
     btnState = 2
     mainBtn.innerText = "Exit"
-    displayText.innerText = "Total Score:"
-    jpText.innerText = testCount - 1
+    displayText.innerText = "Total Score: " + (testCount - 1).toString()
+    jpText.innerText += " (" + answer + ")"
     textInput.style.display = "none"
     testCount = 0
 }
