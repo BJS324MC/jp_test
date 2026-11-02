@@ -33,7 +33,7 @@ function newQuestion(){
     jpText.innerText = question
 }
 function enter(){
-    if(textInput.value == answer.toLowerCase().trim()){
+    if(textInput.value.toLowerCase().trim() == answer){
         newQuestion()
     }
     else{
